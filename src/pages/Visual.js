@@ -6,8 +6,15 @@ const Visual = () => {
     <div className="visual">
       <div className="visual-content">
         <h1>Visual</h1>
-        <div className="visual-placeholder">
-          <p>Music video content coming soon...</p>
+        <div className="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/9k_ZV4AFm_E"
+            title="Zanjo Bloom Music Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="youtube-video"
+          ></iframe>
         </div>
       </div>
     </div>

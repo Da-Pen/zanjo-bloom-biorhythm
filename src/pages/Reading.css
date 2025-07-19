@@ -278,6 +278,7 @@
 
   .about-panel .panel-content {
     padding-top: 3rem;
+    padding-bottom: 6rem; /* Space for footer on tablet */
   }
 
 
@@ -333,6 +334,7 @@
 
   .about-panel .panel-content {
     padding-top: 3rem;
+    padding-bottom: 6rem; /* Space for footer on mobile */
   }
 
   .about-btn, .back-btn, .about-btn-simple, .back-btn-simple {
@@ -422,6 +424,7 @@
 .about-panel .panel-content {
   justify-content: flex-start;
   padding-top: 3rem;
+  padding-bottom: 6rem; /* Space for footer */
   overflow-y: auto;
   max-height: 100%;
 }

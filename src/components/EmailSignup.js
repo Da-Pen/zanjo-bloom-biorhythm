@@ -59,6 +59,10 @@ const EmailSignup = () => {
             </button>
           </div>
         </form>
+        
+        <div className="subscription-disclaimer">
+          By subscribing, you agree to receive news and updates from Zanjo Bloom and LVNDR Records.
+        </div>
       </div>
     </div>
   );

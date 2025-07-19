@@ -46,6 +46,10 @@ const Footer = () => {
             </a>
           ))}
         </div>
+        
+        <div className="copyright">
+          © 2025 LVNDR Records. All rights reserved.
+        </div>
       </div>
     </footer>
   );

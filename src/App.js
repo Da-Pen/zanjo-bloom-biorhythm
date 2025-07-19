@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Visual from './pages/Visual';
 import Reading from './pages/Reading';
+import Music from './pages/Music';
 import backgroundImage from './assets/background.jpg';
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/music" element={<Music />} />
             <Route path="/visual" element={<Visual />} />
             <Route path="/reading" element={<Reading />} />
           </Routes>
