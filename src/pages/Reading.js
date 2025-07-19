@@ -101,6 +101,14 @@ const Reading = () => {
   const chartOptions = {
     responsive: true,
     maintainAspectRatio: false,
+    layout: {
+      padding: {
+        top: 20,
+        bottom: 20,
+        left: 10,
+        right: 10,
+      },
+    },
     plugins: {
       legend: {
         display: false, // Remove legend as requested
@@ -123,14 +131,27 @@ const Reading = () => {
         },
       },
       y: {
-        min: -100,
-        max: 100,
+        min: -110,
+        max: 110,
         grid: {
-          display: false, // Remove grid
+          display: true, // Enable grid to show zero line
           drawBorder: false,
+          color: function(context) {
+            if (context.tick.value === 0) {
+              return 'rgba(255, 255, 255, 0.3)'; // White zero line
+            }
+            return 'transparent'; // Hide all other grid lines
+          },
+          lineWidth: function(context) {
+            if (context.tick.value === 0) {
+              return 1; // Zero line width
+            }
+            return 0; // Hide other lines
+          },
         },
         ticks: {
           display: false, // Remove y-axis labels
+          stepSize: 50, // Ensure zero is included in ticks
         },
       },
     },
@@ -181,7 +202,6 @@ const Reading = () => {
           <div className="chart-section">
             <div className="chart-container">
               <Line data={chartData} options={chartOptions} />
-              <div className="zero-line"></div>
             </div>
             
             <div className="chart-labels">

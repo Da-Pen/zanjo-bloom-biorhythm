@@ -63,6 +63,19 @@
   border-color: #ffffff;
 }
 
+.date-input::-webkit-calendar-picker-indicator {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: 16px 16px;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+}
+
+.date-input::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
 .calculate-btn {
   background: transparent;
   color: #ffffff;
@@ -94,22 +107,9 @@
   flex: 1;
   height: 250px;
   position: relative;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 4px;
-  backdrop-filter: blur(5px);
 }
 
-.zero-line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.3);
-  pointer-events: none;
-  z-index: 1;
-}
+/* Zero line now handled by Chart.js directly */
 
 .chart-labels {
   display: flex;

@@ -1,4 +1,5 @@
 import React from 'react';
+import EmailSignup from '../components/EmailSignup';
 import './Home.css';
 
 const Home = () => {
@@ -23,6 +24,8 @@ const Home = () => {
         >
           Listen Now
         </button>
+        
+        <EmailSignup />
       </div>
     </div>
   );
