@@ -14,22 +14,22 @@ const Header = () => {
   const socialLinks = [
     { 
       name: 'instagram', 
-      icon: '/instagram-brands-solid.svg',
+      icon: `${process.env.PUBLIC_URL}/instagram-brands-solid.svg`,
       url: 'https://google.com'
     },
     { 
       name: 'facebook', 
-      icon: '/facebook-brands-solid.svg',
+      icon: `${process.env.PUBLIC_URL}/facebook-brands-solid.svg`,
       url: 'https://google.com'
     },
     { 
       name: 'tiktok', 
-      icon: '/tiktok-brands-solid.svg',
+      icon: `${process.env.PUBLIC_URL}/tiktok-brands-solid.svg`,
       url: 'https://google.com'
     },
     { 
       name: 'youtube', 
-      icon: '/youtube-brands-solid.svg',
+      icon: `${process.env.PUBLIC_URL}/youtube-brands-solid.svg`,
       url: 'https://google.com'
     }
   ];
@@ -54,7 +54,7 @@ const Header = () => {
 
         {/* Logo - Center */}
         <Link to="/" className="logo-link">
-          <img src="/zanjo_bloom_logo.png" alt="Zanjo Bloom" className="logo" />
+          <img src={`${process.env.PUBLIC_URL}/zanjo_bloom_logo.png`} alt="Zanjo Bloom" className="logo" />
         </Link>
 
         {/* Navigation - Desktop: Top Right, Mobile: Below Logo */}

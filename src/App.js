@@ -20,7 +20,7 @@ function App() {
           loop 
           playsInline
         >
-          <source src="/background.mov" type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/background.mov`} type="video/mp4" />
         </video>
 
         {/* Overlay for better text readability */}
