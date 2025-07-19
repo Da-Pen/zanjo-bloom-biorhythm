@@ -13,7 +13,7 @@ const EmailSignup = () => {
       const formData = new FormData();
       formData.append('entry.YOUR_ENTRY_ID', email); // Replace with your form's entry ID
       
-      const response = await fetch('https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse', {
+      await fetch('https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse', {
         method: 'POST',
         body: formData,
         mode: 'no-cors', // Important for Google Forms
