@@ -15,22 +15,22 @@ const Header = () => {
     { 
       name: 'instagram', 
       icon: `${process.env.PUBLIC_URL}/instagram-brands-solid.svg`,
-      url: 'https://google.com'
+      url: 'https://www.instagram.com/zanjobloom'
     },
     { 
       name: 'facebook', 
       icon: `${process.env.PUBLIC_URL}/facebook-brands-solid.svg`,
-      url: 'https://google.com'
+      url: 'https://www.facebook.com/profile.php?id=61568764451955'
     },
     { 
       name: 'tiktok', 
       icon: `${process.env.PUBLIC_URL}/tiktok-brands-solid.svg`,
-      url: 'https://google.com'
+      url: 'https://www.tiktok.com/@zanjobloom'
     },
     { 
       name: 'youtube', 
       icon: `${process.env.PUBLIC_URL}/youtube-brands-solid.svg`,
-      url: 'https://google.com'
+      url: 'https://www.youtube.com/@zanjobloom'
     }
   ];
 

@@ -30,8 +30,7 @@ const EmailSignup = () => {
   return (
     <div className="email-signup">
       <div className="signup-content">
-        <h3>Stay Connected</h3>
-        <p>Get updates on new releases and shows</p>
+        <h3>Newsletter</h3>
         
         {status === 'success' && (
           <div className="success-message">
@@ -51,7 +50,7 @@ const EmailSignup = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
+              placeholder="email address"
               required
               className="email-input"
             />

@@ -10,8 +10,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
   max-width: 600px;
+}
+
+.home-content .email-signup {
+  margin-top: 1.5rem;
 }
 
 .album-cover {
@@ -67,7 +71,7 @@
   }
 
   .home-content {
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
 }
 
@@ -84,5 +88,9 @@
 
   .home-content {
     gap: 1rem;
+  }
+  
+  .home-content .email-signup {
+    margin-top: 1rem;
   }
 } 
