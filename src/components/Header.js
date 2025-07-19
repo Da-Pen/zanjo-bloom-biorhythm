@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import zanjoBloomLogo from '../assets/zanjo_bloom_logo.png';
+import instagramIcon from '../assets/instagram-brands-solid.svg';
+import facebookIcon from '../assets/facebook-brands-solid.svg';
+import tiktokIcon from '../assets/tiktok-brands-solid.svg';
+import youtubeIcon from '../assets/youtube-brands-solid.svg';
 import './Header.css';
 
 const Header = () => {
@@ -14,22 +19,22 @@ const Header = () => {
   const socialLinks = [
     { 
       name: 'instagram', 
-      icon: `${process.env.PUBLIC_URL}/instagram-brands-solid.svg`,
+      icon: instagramIcon,
       url: 'https://www.instagram.com/zanjobloom'
     },
     { 
       name: 'facebook', 
-      icon: `${process.env.PUBLIC_URL}/facebook-brands-solid.svg`,
+      icon: facebookIcon,
       url: 'https://www.facebook.com/profile.php?id=61568764451955'
     },
     { 
       name: 'tiktok', 
-      icon: `${process.env.PUBLIC_URL}/tiktok-brands-solid.svg`,
+      icon: tiktokIcon,
       url: 'https://www.tiktok.com/@zanjobloom'
     },
     { 
       name: 'youtube', 
-      icon: `${process.env.PUBLIC_URL}/youtube-brands-solid.svg`,
+      icon: youtubeIcon,
       url: 'https://www.youtube.com/@zanjobloom'
     }
   ];
@@ -54,7 +59,7 @@ const Header = () => {
 
         {/* Logo - Center */}
         <Link to="/" className="logo-link">
-          <img src={`${process.env.PUBLIC_URL}/zanjo_bloom_logo.png`} alt="Zanjo Bloom" className="logo" />
+          <img src={zanjoBloomLogo} alt="Zanjo Bloom" className="logo" />
         </Link>
 
         {/* Navigation - Desktop: Top Right, Mobile: Below Logo */}

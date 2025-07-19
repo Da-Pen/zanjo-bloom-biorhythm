@@ -6,25 +6,21 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Visual from './pages/Visual';
 import Reading from './pages/Reading';
+import backgroundImage from './assets/background.jpg';
 import './App.css';
 
 function App() {
   return (
     <Router basename="/zanjo-bloom-biorhythm">
       <div className="App">
-        {/* Background Video */}
-        <video 
-          className="background-video"
-          autoPlay 
-          muted 
-          loop 
-          playsInline
-        >
-          <source src={`${process.env.PUBLIC_URL}/background.mov`} type="video/mp4" />
-        </video>
+        {/* Background Image */}
+        <div 
+          className="background-image"
+          style={{ backgroundImage: `url(${backgroundImage})` }}
+        />
 
         {/* Overlay for better text readability */}
-        <div className="video-overlay"></div>
+        <div className="image-overlay"></div>
 
         {/* Persistent Header */}
         <Header />

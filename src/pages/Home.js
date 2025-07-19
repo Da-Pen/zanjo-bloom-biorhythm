@@ -1,5 +1,6 @@
 import React from 'react';
 import EmailSignup from '../components/EmailSignup';
+import albumCover from '../assets/biorhythm-album-cover.jpg';
 import './Home.css';
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <div className="home-content">
         <div 
           className="album-cover"
+          style={{ backgroundImage: `url(${albumCover})` }}
           onClick={handleAlbumClick}
         />
         <button 

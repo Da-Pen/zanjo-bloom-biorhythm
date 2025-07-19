@@ -1,26 +1,30 @@
 import React from 'react';
+import instagramIcon from '../assets/instagram-brands-solid.svg';
+import facebookIcon from '../assets/facebook-brands-solid.svg';
+import tiktokIcon from '../assets/tiktok-brands-solid.svg';
+import youtubeIcon from '../assets/youtube-brands-solid.svg';
 import './Footer.css';
 
 const Footer = () => {
   const socialLinks = [
     { 
       name: 'instagram', 
-      icon: `${process.env.PUBLIC_URL}/instagram-brands-solid.svg`,
+      icon: instagramIcon,
       url: 'https://www.instagram.com/zanjobloom'
     },
     { 
       name: 'facebook', 
-      icon: `${process.env.PUBLIC_URL}/facebook-brands-solid.svg`,
+      icon: facebookIcon,
       url: 'https://www.facebook.com/profile.php?id=61568764451955'
     },
     { 
       name: 'tiktok', 
-      icon: `${process.env.PUBLIC_URL}/tiktok-brands-solid.svg`,
+      icon: tiktokIcon,
       url: 'https://www.tiktok.com/@zanjobloom'
     },
     { 
       name: 'youtube', 
-      icon: `${process.env.PUBLIC_URL}/youtube-brands-solid.svg`,
+      icon: youtubeIcon,
       url: 'https://www.youtube.com/@zanjobloom'
     }
   ];
