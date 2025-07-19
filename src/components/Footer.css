@@ -1,0 +1,59 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  display: none; /* Hidden on desktop */
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Mobile Social Links */
+.mobile-social-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.mobile-social-links .social-link {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.mobile-social-links .social-link:hover {
+  opacity: 1;
+}
+
+.mobile-social-links .social-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Show footer only on mobile */
+@media (max-width: 768px) {
+  .footer {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-social-links {
+    gap: 2rem;
+  }
+
+  .mobile-social-links .social-link {
+    width: 20px;
+    height: 20px;
+  }
+} 
