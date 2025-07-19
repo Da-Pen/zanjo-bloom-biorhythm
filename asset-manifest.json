@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/zanjo-bloom-biorhythm/static/css/main.9c5303e6.css",
-    "main.js": "/zanjo-bloom-biorhythm/static/js/main.19364180.js",
+    "main.css": "/zanjo-bloom-biorhythm/static/css/main.abbb1414.css",
+    "main.js": "/zanjo-bloom-biorhythm/static/js/main.812455b3.js",
     "index.html": "/zanjo-bloom-biorhythm/index.html",
-    "main.9c5303e6.css.map": "/zanjo-bloom-biorhythm/static/css/main.9c5303e6.css.map",
-    "main.19364180.js.map": "/zanjo-bloom-biorhythm/static/js/main.19364180.js.map"
+    "main.abbb1414.css.map": "/zanjo-bloom-biorhythm/static/css/main.abbb1414.css.map",
+    "main.812455b3.js.map": "/zanjo-bloom-biorhythm/static/js/main.812455b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c5303e6.css",
-    "static/js/main.19364180.js"
+    "static/css/main.abbb1414.css",
+    "static/js/main.812455b3.js"
   ]
 }
