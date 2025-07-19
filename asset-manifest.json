@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zanjo-bloom-biorhythm/static/css/main.f02169d6.css",
-    "main.js": "/zanjo-bloom-biorhythm/static/js/main.6b236dd6.js",
+    "main.css": "/zanjo-bloom-biorhythm/static/css/main.ce633d62.css",
+    "main.js": "/zanjo-bloom-biorhythm/static/js/main.a8b61205.js",
     "static/media/background.jpg": "/zanjo-bloom-biorhythm/static/media/background.22c2ecb368e4cef8514f.jpg",
     "static/media/biorhythm-album-cover.jpg": "/zanjo-bloom-biorhythm/static/media/biorhythm-album-cover.3f028376b872886584dc.jpg",
     "static/media/zanjo_bloom_logo.png": "/zanjo-bloom-biorhythm/static/media/zanjo_bloom_logo.104b0159e5064ac56898.png",
@@ -10,11 +10,11 @@
     "static/media/youtube-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/youtube-brands-solid.508fc8c5f21d08764abff235408e9863.svg",
     "static/media/facebook-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/facebook-brands-solid.1e2728d655991f488b6d434dd6b8eed6.svg",
     "static/media/tiktok-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/tiktok-brands-solid.b80eabd1b330c52304cee1ded7c203c6.svg",
-    "main.f02169d6.css.map": "/zanjo-bloom-biorhythm/static/css/main.f02169d6.css.map",
-    "main.6b236dd6.js.map": "/zanjo-bloom-biorhythm/static/js/main.6b236dd6.js.map"
+    "main.ce633d62.css.map": "/zanjo-bloom-biorhythm/static/css/main.ce633d62.css.map",
+    "main.a8b61205.js.map": "/zanjo-bloom-biorhythm/static/js/main.a8b61205.js.map"
   },
   "entrypoints": [
-    "static/css/main.f02169d6.css",
-    "static/js/main.6b236dd6.js"
+    "static/css/main.ce633d62.css",
+    "static/js/main.a8b61205.js"
   ]
 }
