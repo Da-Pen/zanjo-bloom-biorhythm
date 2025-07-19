@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/zanjo-bloom-biorhythm/static/css/main.9c5303e6.css",
+    "main.js": "/zanjo-bloom-biorhythm/static/js/main.f9127bcc.js",
+    "index.html": "/zanjo-bloom-biorhythm/index.html",
+    "main.9c5303e6.css.map": "/zanjo-bloom-biorhythm/static/css/main.9c5303e6.css.map",
+    "main.f9127bcc.js.map": "/zanjo-bloom-biorhythm/static/js/main.f9127bcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c5303e6.css",
+    "static/js/main.f9127bcc.js"
+  ]
+}
