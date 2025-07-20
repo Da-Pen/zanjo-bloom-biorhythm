@@ -28,7 +28,6 @@ const Reading = () => {
   const [birthDate, setBirthDate] = useState('');
   const [targetDate, setTargetDate] = useState(format(new Date(), 'yyyy-MM-dd'));
   const [chartData, setChartData] = useState(null);
-  const [currentView, setCurrentView] = useState('graph'); // 'graph' or 'about'
   const [currentScores, setCurrentScores] = useState(null);
 
   const calculateBiorhythm = () => {
@@ -205,137 +204,107 @@ const Reading = () => {
 
   return (
     <div className="reading">
-      <div className={`reading-slider-container ${currentView === 'about' ? 'show-about' : ''}`}>
+      <div className="reading-content">
+        <h1>Biorhythm Reading</h1>
         
-        {/* Graph Panel */}
-        <div className={`panel graph-panel ${currentView === 'graph' ? 'active' : ''}`}>
-          <div className="panel-content">
-            <h1>Biorhythm Reading</h1>
-            
-            <div className="calculator-controls">
-              <div className="input-group">
-                <label>Birth Date</label>
-                <input
-                  type="date"
-                  value={birthDate}
-                  onChange={(e) => setBirthDate(e.target.value)}
-                  className="date-input"
-                />
-              </div>
-              
-              <div className="input-group">
-                <label>Target Date</label>
-                <input
-                  type="date"
-                  value={targetDate}
-                  onChange={(e) => setTargetDate(e.target.value)}
-                  className="date-input"
-                />
-              </div>
-              
-              <button onClick={calculateBiorhythm} className="calculate-btn">
-                Calculate
-              </button>
-            </div>
-
-
-
-            {chartData && (
-              <div className="chart-section">
-                <div className="chart-labels">
-                  <div className="label physical">
-                    Physical
-                    {currentScores && <div className="score-value">{currentScores.physical}</div>}
-                  </div>
-                  <div className="label emotional">
-                    Emotional
-                    {currentScores && <div className="score-value">{currentScores.emotional}</div>}
-                  </div>
-                  <div className="label intellectual">
-                    Intellectual
-                    {currentScores && <div className="score-value">{currentScores.intellectual}</div>}
-                  </div>
-                </div>
-                
-                <div className="chart-container">
-                  <Line data={chartData} options={chartOptions} />
-                </div>
-              </div>
-            )}
-            
-            {/* About Button */}
-            {chartData && (
-              <div className="panel-navigation">
-                <button 
-                  onClick={() => setCurrentView('about')} 
-                  className="about-btn-simple"
-                >
-                  About Biorhythms
-                </button>
-              </div>
-            )}
+        {/* Calculator Form - Always Visible */}
+        <div className="calculator-controls">
+          <div className="input-group">
+            <label>Birth Date</label>
+            <input
+              type="date"
+              value={birthDate}
+              onChange={(e) => setBirthDate(e.target.value)}
+              className="date-input"
+            />
           </div>
+          
+          <div className="input-group">
+            <label>Target Date</label>
+            <input
+              type="date"
+              value={targetDate}
+              onChange={(e) => setTargetDate(e.target.value)}
+              className="date-input"
+            />
+          </div>
+          
+          <button onClick={calculateBiorhythm} className="calculate-btn">
+            Calculate
+          </button>
         </div>
 
-        {/* About Panel */}
-        <div className={`panel about-panel ${currentView === 'about' ? 'active' : ''}`}>
-          <div className="panel-content">
-            {/* Back Button */}
-            <div className="panel-navigation top-left">
-              <button 
-                onClick={() => setCurrentView('graph')} 
-                className="back-btn-simple"
-              >
-                ← Back
-              </button>
-            </div>
-            
-            <div className="about-biorhythms">
-              <h2>About Biorhythms</h2>
-              <div className="biorhythm-info">
-                <p>
-                  Biorhythm theory suggests that our lives are influenced by rhythmic biological cycles that affect our ability 
-                  in various domains. The theory was developed in the late 19th century by Wilhelm Fliess, a German physician, 
-                  and later popularized in the 1970s.
-                </p>
-                
-                <div className="cycle-explanations">
-                  <div className="cycle-explanation">
-                    <h3>Physical Cycle (23 days)</h3>
-                    <p>
-                      Governs physical strength, energy levels, stamina, and overall health. High phases indicate peak physical 
-                      performance, while low phases suggest rest and recovery periods. This cycle influences athletic performance, 
-                      immune system strength, and physical coordination.
-                    </p>
-                  </div>
-                  
-                  <div className="cycle-explanation">
-                    <h3>Emotional Cycle (28 days)</h3>
-                    <p>
-                      Controls mood, feelings, emotional stability, and creativity. High phases bring optimism, artistic inspiration, 
-                      and emotional balance, while low phases may involve introspection, sensitivity, or mood fluctuations. This cycle 
-                      affects relationships, artistic endeavors, and emotional well-being.
-                    </p>
-                  </div>
-                  
-                  <div className="cycle-explanation">
-                    <h3>Intellectual Cycle (33 days)</h3>
-                    <p>
-                      Influences mental capabilities, logic, reasoning, and decision-making. High phases enhance analytical thinking, 
-                      learning capacity, and problem-solving abilities, while low phases suggest slower mental processing. This cycle 
-                      affects academic performance, strategic planning, and cognitive tasks.
-                    </p>
-                  </div>
-                </div>
-                
-                <p className="disclaimer">
-                  While biorhythm theory is not scientifically proven, many people find it useful for self-reflection and 
-                  understanding their natural patterns of energy and mood.
-                </p>
+        {/* Chart Section - Only shows after calculate */}
+        {chartData && (
+          <div className="chart-section">
+            <div className="chart-labels">
+              <div className="label physical">
+                Physical
+                {currentScores && <div className="score-value">{currentScores.physical}</div>}
+              </div>
+              <div className="label emotional">
+                Emotional
+                {currentScores && <div className="score-value">{currentScores.emotional}</div>}
+              </div>
+              <div className="label intellectual">
+                Intellectual
+                {currentScores && <div className="score-value">{currentScores.intellectual}</div>}
               </div>
             </div>
+            
+            <div className="chart-container">
+              <Line data={chartData} options={chartOptions} />
+            </div>
           </div>
-        </div>
+        )}
+        
+        {/* About Biorhythms Section - Only shows after calculate */}
+        {chartData && (
+          <div className="about-biorhythms">
+            <h2>About Biorhythms</h2>
+            <div className="biorhythm-info">
+              <p>
+                Biorhythm theory suggests that our lives are influenced by rhythmic biological cycles that affect our ability 
+                in various domains. The theory was developed in the late 19th century by Wilhelm Fliess, a German physician, 
+                and later popularized in the 1970s.
+              </p>
+              
+              <div className="cycle-explanations">
+                <div className="cycle-explanation">
+                  <h3>Physical Cycle (23 days)</h3>
+                  <p>
+                    Governs physical strength, energy levels, stamina, and overall health. High phases indicate peak physical 
+                    performance, while low phases suggest rest and recovery periods. This cycle influences athletic performance, 
+                    immune system strength, and physical coordination.
+                  </p>
+                </div>
+                
+                <div className="cycle-explanation">
+                  <h3>Emotional Cycle (28 days)</h3>
+                  <p>
+                    Controls mood, feelings, emotional stability, and creativity. High phases bring optimism, artistic inspiration, 
+                    and emotional balance, while low phases may involve introspection, sensitivity, or mood fluctuations. This cycle 
+                    affects relationships, artistic endeavors, and emotional well-being.
+                  </p>
+                </div>
+                
+                <div className="cycle-explanation">
+                  <h3>Intellectual Cycle (33 days)</h3>
+                  <p>
+                    Influences mental capabilities, logic, reasoning, and decision-making. High phases enhance analytical thinking, 
+                    learning capacity, and problem-solving abilities, while low phases suggest slower mental processing. This cycle 
+                    affects academic performance, strategic planning, and cognitive tasks.
+                  </p>
+                </div>
+              </div>
+              
+              <p className="disclaimer">
+                While biorhythm theory is not scientifically proven, many people find it useful for self-reflection and 
+                understanding their natural patterns of energy and mood.
+              </p>
+            </div>
+          </div>
+        )}
         
       </div>
     </div>

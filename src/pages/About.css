@@ -24,9 +24,9 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh; /* Fallback for older browsers */
-  height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
-  padding: 6rem 1rem 2rem; /* Same as .panel - header clearance */
+  min-height: calc(100vh - 120px); /* Full height minus header/footer space */
+  min-height: calc(100dvh - 120px);
+  padding: 1rem; /* Minimal padding */
   box-sizing: border-box;
 }
 
@@ -34,24 +34,15 @@
   max-width: 800px;
   width: 100%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  /* Copy exact pattern from .about-panel .panel-content */
-  justify-content: flex-start;
-  padding-top: 3rem;
-  padding-bottom: 6rem; /* Space for footer */
-  overflow-y: auto;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
+  padding: 0.5rem 2rem 2rem; /* Less top padding to bring title closer to nav */
+  /* Remove dark background box */
 }
 
 .about h1 {
   color: #ffffff;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
+  margin-top: 0; /* Ensure no extra top margin */
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -78,7 +69,8 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .about {
-    padding: 7rem 1rem 1rem; /* Extra padding for mobile stacked header */
+    padding: 1rem; /* Normal padding since header scrolls */
+    padding-bottom: 120px; /* Extra space for fixed footer */
   }
 
   .about h1 {
@@ -93,7 +85,8 @@
 
 @media (max-width: 480px) {
   .about {
-    padding: 6.5rem 1rem 1rem; /* Extra padding for small mobile header */
+    padding: 1rem; /* Normal padding since header scrolls */
+    padding-bottom: 120px; /* Extra space for fixed footer */
   }
 
   .about h1 {

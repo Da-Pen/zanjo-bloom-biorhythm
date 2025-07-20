@@ -1,15 +1,19 @@
 .reading {
-  position: relative;
+  display: flex;
+  align-items: flex-start; /* Start from top for scrollable content */
+  justify-content: center;
   width: 100%;
-  height: 100vh; /* Fallback for older browsers */
-  height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
-  overflow: hidden;
+  min-height: calc(100vh - 120px); /* Full height minus header/footer space */
+  min-height: calc(100dvh - 120px);
+  padding: 1rem; /* Match About page padding */
+  padding-bottom: 120px; /* Extra space for fixed footer */
+  box-sizing: border-box;
 }
 
 .reading-slider-container {
   display: flex;
   width: 200%; /* Two panels side by side */
-  height: 100%;
+  align-items: flex-start; /* Prevent height matching between panels */
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -20,31 +24,33 @@
 /* Individual Panels */
 .panel {
   width: 50%; /* Each panel takes half of the container */
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1rem 2rem;
+  padding: 0; /* Remove padding to match About page structure */
   box-sizing: border-box;
+}
+
+/* Graph Panel - match About page structure */
+.graph-panel {
+  align-self: flex-start; /* Don't stretch to match about panel height */
+}
+
+/* About Panel - allow natural expansion */
+.about-panel {
+  align-self: flex-start; /* Allow natural height expansion */
 }
 
 .panel-content {
   max-width: 1200px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  justify-content: center;
-  position: relative;
+  text-align: center;
+  padding: 0.5rem 2rem 2rem; /* Match About page content padding */
+  /* Remove flex properties to match About page structure */
 }
 
 .graph-panel .panel-content {
-  justify-content: flex-start;
-  padding-top: 3rem;
-  padding-bottom: 6rem; /* Space for footer */
-  overflow-y: auto;
-  max-height: 100%;
+  padding: 0.5rem 2rem 2rem; /* Same as About page - this should fix the height issue */
 }
 
 .reading h1 {
@@ -148,8 +154,8 @@
 
 /* Desktop: Force wider chart */
 @media (min-width: 1024px) {
-  .panel {
-    padding: 6rem 1.5rem 2rem; /* Comfortable side spacing */
+  .reading {
+    padding: 1rem 1.5rem; /* Comfortable side spacing */
   }
   
   .panel-content {
@@ -225,8 +231,13 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-  .panel {
-    padding: 7rem 1rem 1rem; /* Extra padding for mobile stacked header (logo + nav) */
+  .reading {
+    padding: 1rem; /* Normal padding since header scrolls */
+    padding-bottom: 120px; /* Extra space for fixed footer */
+  }
+
+  .reading-content {
+    padding: 0.5rem 1rem 1rem; /* Reduce padding for mobile */
   }
 
   .reading h1 {
@@ -281,17 +292,21 @@
     height: 200px;
   }
 
-  .about-panel .panel-content {
-    padding-top: 3rem;
-    padding-bottom: 6rem; /* Space for footer on tablet */
+  .about-biorhythms {
+    padding: 0rem 0; /* Reduce padding for mobile */
   }
 
 
 }
 
 @media (max-width: 480px) {
-  .panel {
-    padding: 6.5rem 1rem 1rem; /* Extra padding for small mobile stacked header */
+  .reading {
+    padding: 1rem; /* Normal padding since header scrolls */
+    padding-bottom: 120px; /* Extra space for fixed footer */
+  }
+
+  .reading-content {
+    padding: 0.5rem 1rem 1rem; /* Reduce padding for small mobile */
   }
   
   .reading h1 {
@@ -337,14 +352,8 @@
     font-size: 0.8rem;
   }
 
-  .about-panel .panel-content {
-    padding-top: 3rem;
-    padding-bottom: 6rem; /* Space for footer on mobile */
-  }
-
-  .about-btn, .back-btn, .about-btn-simple, .back-btn-simple {
-    font-size: 1rem !important;
-    padding: 0.6rem 1.2rem;
+  .about-biorhythms {
+    padding: 0.5rem 0; /* Reduce padding for small mobile */
   }
 
 
@@ -352,99 +361,22 @@
 
 
 
-/* Panel Navigation Buttons */
-.panel-navigation {
-  margin-top: 0.5rem;
-}
+/* Removed obsolete panel navigation styles since we use simple single-page layout now */
 
-.panel-navigation.top-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
-.about-btn, .back-btn {
-  background: transparent;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-
-.about-btn:hover, .back-btn:hover {
-  background: #ffffff;
-  color: #000000;
-}
-
-/* Simple button styles without borders */
-.about-btn-simple {
-  background: transparent;
-  color: #ffffff;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.about-btn-simple:hover {
-  color: #cccccc;
-}
-
-.back-btn-simple {
-  background: transparent;
-  color: #ffffff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.back-btn-simple:hover {
-  color: #cccccc;
-}
-
-.back-btn {
-  font-size: 0.9rem;
-  padding: 0.6rem 1.2rem;
-}
-
-/* About Panel Specific */
-.about-panel .panel-content {
-  justify-content: flex-start;
-  padding-top: 3rem;
-  padding-bottom: 6rem; /* Space for footer */
-  overflow-y: auto;
-  max-height: 100%;
-}
+/* Removed obsolete graph panel styles */
 
 /* About Biorhythms Section */
 .about-biorhythms {
   max-width: 900px;
   width: 100%;
-  margin: 0 auto;
+  margin: 2rem auto 0; /* Add top margin to separate from chart */
+  text-align: left; /* Left align content */
 }
 
 .about-biorhythms h2 {
   color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -453,11 +385,8 @@
 }
 
 .biorhythm-info {
-  background: rgba(0, 0, 0, 0.2);
-  padding: 2rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem 2rem 0.5rem; /* Reduce bottom padding to minimize gap */
+  /* Remove dark background box */
 }
 
 .biorhythm-info p {
@@ -466,17 +395,26 @@
   line-height: 1.8;
   text-align: left;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* Reduce bottom margin */
+}
+
+.biorhythm-info p:last-of-type {
+  margin-bottom: 0.5rem; /* Even less for last paragraph */
 }
 
 .cycle-explanations {
   display: grid;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: 0rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .cycle-explanation {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* Reduce bottom margin */
+}
+
+.cycle-explanation:last-child {
+  margin-bottom: 0.5rem; /* Minimal bottom margin for last cycle */
 }
 
 .cycle-explanation h3 {
@@ -506,24 +444,22 @@
 /* Mobile responsive for about section */
 @media (max-width: 768px) {
   .biorhythm-info {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0.5rem; /* Reduce bottom padding on mobile too */
   }
   
   .about-biorhythms h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
   }
 }
 
 @media (max-width: 480px) {
   .biorhythm-info {
-    padding: 1.2rem;
+    padding: 1.2rem 1.2rem 0.5rem; /* Reduce bottom padding on small mobile too */
   }
   
-
-  
   .about-biorhythms h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   
   .cycle-explanation h3 {

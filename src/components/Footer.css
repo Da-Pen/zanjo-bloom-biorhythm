@@ -1,16 +1,25 @@
 .footer {
+  z-index: 1000;
+  background: transparent;
+}
+
+/* Fixed positioning for non-scrolling pages */
+.footer-fixed {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
-  background: transparent;
+}
+
+/* Relative positioning for scrolling pages */
+.footer-content-bottom {
+  position: relative;
 }
 
 .footer-content {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0.25rem 1rem; /* Further reduce vertical padding */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +30,7 @@
 .mobile-social-links {
   display: none; /* Hidden on desktop */
   gap: 2.5rem;
+  margin: 0; /* Remove any default margins */
 }
 
 .mobile-social-links .social-link {
@@ -64,6 +74,7 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 0.7rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.5rem; /* Reduce space between socials and copyright */
+  margin-bottom: 0; /* Remove any bottom margin */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 } 

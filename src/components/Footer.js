@@ -5,7 +5,7 @@ import tiktokIcon from '../assets/tiktok-brands-solid.svg';
 import youtubeIcon from '../assets/youtube-brands-solid.svg';
 import './Footer.css';
 
-const Footer = () => {
+const Footer = ({ isFixed = false }) => {
   const socialLinks = [
     { 
       name: 'instagram', 
@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer">
+    <footer className={`footer ${isFixed ? 'footer-fixed' : 'footer-content-bottom'}`}>
       <div className="footer-content">
         {/* Mobile Social Links */}
         <div className="mobile-social-links">

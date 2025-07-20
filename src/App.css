@@ -26,16 +26,14 @@
 
 /* Mobile viewport fix */
 html {
-  height: 100%;
-  height: 100dvh; /* Dynamic viewport height for mobile */
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* Prevent scrolling on mobile for all pages except About */
+/* Allow natural scrolling since header/footer scroll with content */
 body {
-  height: 100%;
-  height: 100dvh; /* Dynamic viewport height for mobile */
-  overflow: hidden;
+  margin: 0 !important; /* Force no margins */
+  padding: 0 !important; /* Force no padding */
 }
 
 body {
@@ -63,39 +61,33 @@ button,
 .btn,
 .calculate-btn,
 .listen-now-btn,
-.signup-btn,
-.about-btn,
-.about-btn-simple,
-.back-btn,
-.back-btn-simple {
+.signup-btn {
   font-family: 'Big Shoulders Display', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.1rem !important; /* Slightly larger button text */
 }
 
 .App {
   position: relative;
-  min-height: 100vh; /* Fallback for older browsers */
-  min-height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
   display: flex;
   flex-direction: column;
+  margin: 0; /* Remove all margins */
+  padding: 0; /* Remove all padding */
 }
 
-/* Background Image */
-.background-image {
+/* Background Video */
+.background-video {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   height: 100dvh; /* Use dynamic viewport height for mobile */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: cover; /* Fill entire screen, crop as needed */
   filter: blur(8px) brightness(0.4);
   z-index: -2;
 }
 
-.image-overlay {
+.video-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -111,10 +103,9 @@ button,
   flex: 1;
   position: relative;
   z-index: 1;
-  height: 100vh; /* Fallback for older browsers */
-  height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: calc(100vh - 140px); /* Account for header + footer height */
+  min-height: calc(100dvh - 140px); /* Use dynamic viewport height for mobile */
 }

@@ -1,10 +1,9 @@
 .home {
   display: flex;
-  align-items: flex-start;
+  align-items: center; /* Center content vertically */
   justify-content: center;
   width: 100%;
-  padding: 1rem;
-  padding-top: 8rem; /* Push content down for better centering */
+  padding: 1rem; /* Minimal padding */
 }
 
 .home-content {
@@ -62,7 +61,6 @@
 @media (max-width: 768px) {
   .home {
     padding: 1rem;
-    padding-top: 6rem; /* Less top padding on tablet */
   }
 
   .album-cover {
@@ -81,9 +79,6 @@
 }
 
 @media (max-width: 480px) {
-  .home {
-    padding-top: 4rem; /* Even less top padding on mobile */
-  }
 
   .album-cover {
     width: 180px;
