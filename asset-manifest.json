@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/zanjo-bloom-biorhythm/static/css/main.55b13298.css",
-    "main.js": "/zanjo-bloom-biorhythm/static/js/main.6f187ebc.js",
-    "static/media/background.jpg": "/zanjo-bloom-biorhythm/static/media/background.22c2ecb368e4cef8514f.jpg",
+    "main.css": "/zanjo-bloom-biorhythm/static/css/main.d9315eb9.css",
+    "main.js": "/zanjo-bloom-biorhythm/static/js/main.e538a3b3.js",
+    "static/media/background.mov": "/zanjo-bloom-biorhythm/static/media/background.26c1b712f72957197078.mov",
     "static/media/biorhythm-album-cover.jpg": "/zanjo-bloom-biorhythm/static/media/biorhythm-album-cover.3f028376b872886584dc.jpg",
     "static/media/zanjo_bloom_logo.png": "/zanjo-bloom-biorhythm/static/media/zanjo_bloom_logo.104b0159e5064ac56898.png",
     "static/media/CaslonAntique-Bold.ttf": "/zanjo-bloom-biorhythm/static/media/CaslonAntique-Bold.15800ff39887644a78a0.ttf",
@@ -15,11 +15,11 @@
     "static/media/youtube-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/youtube-brands-solid.508fc8c5f21d08764abff235408e9863.svg",
     "static/media/facebook-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/facebook-brands-solid.1e2728d655991f488b6d434dd6b8eed6.svg",
     "static/media/tiktok-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/tiktok-brands-solid.b80eabd1b330c52304cee1ded7c203c6.svg",
-    "main.55b13298.css.map": "/zanjo-bloom-biorhythm/static/css/main.55b13298.css.map",
-    "main.6f187ebc.js.map": "/zanjo-bloom-biorhythm/static/js/main.6f187ebc.js.map"
+    "main.d9315eb9.css.map": "/zanjo-bloom-biorhythm/static/css/main.d9315eb9.css.map",
+    "main.e538a3b3.js.map": "/zanjo-bloom-biorhythm/static/js/main.e538a3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.55b13298.css",
-    "static/js/main.6f187ebc.js"
+    "static/css/main.d9315eb9.css",
+    "static/js/main.e538a3b3.js"
   ]
 }
