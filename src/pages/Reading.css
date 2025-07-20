@@ -40,7 +40,11 @@
 }
 
 .graph-panel .panel-content {
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 3rem;
+  padding-bottom: 6rem; /* Space for footer */
+  overflow-y: auto;
+  max-height: 100%;
 }
 
 .reading h1 {

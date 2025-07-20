@@ -26,8 +26,8 @@
   width: 100%;
   height: 100vh; /* Fallback for older browsers */
   height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
-  padding: 1rem;
-  overflow-y: auto; /* Allow scrolling on About page */
+  padding: 6rem 1rem 2rem; /* Same as .panel - header clearance */
+  box-sizing: border-box;
 }
 
 .about-content {
@@ -38,6 +38,14 @@
   padding: 2rem;
   border-radius: 10px;
   backdrop-filter: blur(5px);
+  /* Copy exact pattern from .about-panel .panel-content */
+  justify-content: flex-start;
+  padding-top: 3rem;
+  padding-bottom: 6rem; /* Space for footer */
+  overflow-y: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .about h1 {
@@ -70,7 +78,7 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .about {
-    padding: 1rem;
+    padding: 7rem 1rem 1rem; /* Extra padding for mobile stacked header */
   }
 
   .about h1 {
@@ -84,6 +92,10 @@
 }
 
 @media (max-width: 480px) {
+  .about {
+    padding: 6.5rem 1rem 1rem; /* Extra padding for small mobile header */
+  }
+
   .about h1 {
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
