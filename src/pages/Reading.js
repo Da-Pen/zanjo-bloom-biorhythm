@@ -10,7 +10,7 @@ import {
   Tooltip,
   Filler,
 } from 'chart.js';
-import { differenceInDays, format, addDays } from 'date-fns';
+import { differenceInDays, format, addDays, parseISO } from 'date-fns';
 import './Reading.css';
 
 // Register Chart.js components
@@ -34,8 +34,8 @@ const Reading = () => {
   const calculateBiorhythm = () => {
     if (!birthDate) return;
 
-    const birth = new Date(birthDate);
-    const target = new Date(targetDate);
+    const birth = parseISO(birthDate);
+    const target = parseISO(targetDate);
     const daysSinceBirth = differenceInDays(target, birth);
     
     // Calculate current day biorhythm scores
@@ -79,7 +79,7 @@ const Reading = () => {
           label: 'Physical',
           data: physicalData,
           borderColor: '#fff01f',
-          backgroundColor: 'transparent',
+          backgroundColor: '#fff01f',
           borderWidth: 2,
           fill: false,
           tension: 0.4,
@@ -90,7 +90,7 @@ const Reading = () => {
           label: 'Emotional',
           data: emotionalData,
           borderColor: '#bc13fe',
-          backgroundColor: 'transparent',
+          backgroundColor: '#bc13fe',
           borderWidth: 2,
           fill: false,
           tension: 0.4,
@@ -101,7 +101,7 @@ const Reading = () => {
           label: 'Intellectual',
           data: intellectualData,
           borderColor: '#00e71f',
-          backgroundColor: 'transparent',
+          backgroundColor: '#00e71f',
           borderWidth: 2,
           fill: false,
           tension: 0.4,

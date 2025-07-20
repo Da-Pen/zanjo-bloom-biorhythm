@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Caslon Antique';
+  src: url('../assets/fonts/CaslonAntique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caslon Antique';
+  src: url('../assets/fonts/CaslonAntique-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caslon Antique';
+  src: url('../assets/fonts/CaslonAntique-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -30,7 +51,8 @@
 
 .about-text {
   color: #cccccc;
-  font-size: 1.1rem;
+  font-family: 'Caslon Antique', serif;
+  font-size: 1.3rem;
   line-height: 1.8;
   text-align: left;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
@@ -56,7 +78,7 @@
   }
 
   .about-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -67,7 +89,7 @@
   }
 
   .about-text {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .about-text p {

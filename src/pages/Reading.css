@@ -248,7 +248,7 @@
   .calculator-controls .calculate-btn {
     grid-column: 1 / -1;
     grid-row: 2;
-    font-size: 0.9rem;
+    font-size: 1rem !important;
     padding: 0.6rem 1rem;
     margin-top: 0.2rem;
   }
@@ -310,7 +310,7 @@
   }
 
   .calculator-controls .calculate-btn {
-    font-size: 0.85rem;
+    font-size: 1rem !important;
     padding: 0.5rem 0.8rem;
   }
 
@@ -338,7 +338,7 @@
   }
 
   .about-btn, .back-btn, .about-btn-simple, .back-btn-simple {
-    font-size: 0.9rem;
+    font-size: 1rem !important;
     padding: 0.6rem 1.2rem;
   }
 

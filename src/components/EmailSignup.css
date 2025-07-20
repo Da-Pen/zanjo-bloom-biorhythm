@@ -130,6 +130,10 @@
     font-size: 0.9rem;
     padding: 0.7rem;
   }
+  
+  .signup-btn {
+    font-size: 1rem !important;
+  }
 }
 
 /* Subscription disclaimer */
