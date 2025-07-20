@@ -205,7 +205,7 @@ const Reading = () => {
   return (
     <div className="reading">
       <div className="reading-content">
-        <h1>Biorhythm Reading</h1>
+        <h1>Check Your Biorhythm</h1>
         
         {/* Calculator Form - Always Visible */}
         <div className="calculator-controls">

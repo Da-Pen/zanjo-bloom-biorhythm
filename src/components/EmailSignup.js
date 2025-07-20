@@ -9,11 +9,11 @@ const EmailSignup = () => {
     e.preventDefault();
     
     try {
-      // Google Forms submission - replace YOUR_GOOGLE_FORM_ID with your actual form ID
+      // Google Forms submission
       const formData = new FormData();
-      formData.append('entry.YOUR_ENTRY_ID', email); // Replace with your form's entry ID
+      formData.append('entry.1781149804', email); // Your form's entry ID
       
-      await fetch('https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse', {
+      await fetch('https://docs.google.com/forms/d/e/1FAIpQLSfVXgHrhPQQQt3LdEA8GBg84kL5DQWpERS-Oyk0F0V_arHgtw/formResponse', {
         method: 'POST',
         body: formData,
         mode: 'no-cors', // Important for Google Forms
@@ -34,7 +34,7 @@ const EmailSignup = () => {
         
         {status === 'success' && (
           <div className="success-message">
-            Thanks for signing up! ✨
+            Email confirmed
           </div>
         )}
         

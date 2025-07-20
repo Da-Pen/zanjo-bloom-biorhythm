@@ -361,10 +361,6 @@
 
 
 
-/* Removed obsolete panel navigation styles since we use simple single-page layout now */
-
-/* Removed obsolete graph panel styles */
-
 /* About Biorhythms Section */
 .about-biorhythms {
   max-width: 900px;
@@ -375,7 +371,7 @@
 
 .about-biorhythms h2 {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 0rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -387,11 +383,13 @@
 .biorhythm-info {
   padding: 2rem 2rem 0.5rem; /* Reduce bottom padding to minimize gap */
   /* Remove dark background box */
+  font-family: 'Caslon Antique', serif;
+  font-size: 1.7rem;
 }
 
 .biorhythm-info p {
   color: #cccccc;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   text-align: left;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
@@ -419,15 +417,17 @@
 
 .cycle-explanation h3 {
   color: #ffffff;
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
+  font-family: 'Caslon Antique', serif;
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
   font-weight: 500;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .cycle-explanation p {
   color: #cccccc;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   line-height: 1.7;
   margin-bottom: 0;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
@@ -435,7 +435,7 @@
 
 .disclaimer {
   font-style: italic;
-  font-size: 0.9rem !important;
+  font-size: 1.2rem !important;
   color: #aaaaaa !important;
   text-align: center !important;
   margin-bottom: 0 !important;
@@ -451,18 +451,31 @@
     font-size: 1.2rem;
     margin-bottom: 0rem;
   }
+
+  .cycle-explanation p {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 480px) {
   .biorhythm-info {
     padding: 1.2rem 1.2rem 0.5rem; /* Reduce bottom padding on small mobile too */
   }
+
+  .biorhythm-info p {
+    font-size: 1.2rem;
+  }
+  
   
   .about-biorhythms h2 {
     font-size: 1.2rem;
   }
   
   .cycle-explanation h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+
+  .cycle-explanation p {
+    font-size: 1.2rem;
   }
 } 
