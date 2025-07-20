@@ -9,13 +9,13 @@ const Music = () => {
       id: 1,
       cover: glueReworkCover,
       title: 'GLUE - 20XX Rework',
-      url: 'https://distrokid.com/hyperfollow/zanjobloom/glue-20xx-rework'
+      url: 'https://www.notnoise.co/link/zanjo-bloom-glue---20xx-rework'
     },
     {
       id: 2,
       cover: glueCover,
       title: 'GLUE',
-      url: 'https://distrokid.com/hyperfollow/zanjobloom/glue'
+      url: 'https://www.notnoise.co/link/zanjo-bloom-glue'
     }
   ];
 
