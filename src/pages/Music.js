@@ -22,7 +22,7 @@ const Music = () => {
   return (
     <div className="music">
       <div className="music-content">
-        <h1>Music</h1>
+        {/* <h1>Music</h1> */}
         <div className="albums-grid">
           {albums.map(album => (
             <div key={album.id} className="album-card">

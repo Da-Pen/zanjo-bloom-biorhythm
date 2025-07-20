@@ -4,3 +4,4 @@
 - get an actual domain name
 - populate music page
 - fix link from home page - not to spotify but to all streaming links
+- change "Biorhythm reading" title
