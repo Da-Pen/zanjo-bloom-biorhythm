@@ -24,6 +24,20 @@
   box-sizing: border-box;
 }
 
+/* Mobile viewport fix */
+html {
+  height: 100%;
+  height: 100dvh; /* Dynamic viewport height for mobile */
+  overflow: hidden;
+}
+
+/* Prevent scrolling on mobile for all pages except About */
+body {
+  height: 100%;
+  height: 100dvh; /* Dynamic viewport height for mobile */
+  overflow: hidden;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -60,7 +74,8 @@ button,
 
 .App {
   position: relative;
-  min-height: 100vh;
+  min-height: 100vh; /* Fallback for older browsers */
+  min-height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
   display: flex;
   flex-direction: column;
 }
@@ -72,6 +87,7 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
+  height: 100dvh; /* Use dynamic viewport height for mobile */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,6 +101,7 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
+  height: 100dvh; /* Use dynamic viewport height for mobile */
   background: rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
@@ -94,7 +111,8 @@ button,
   flex: 1;
   position: relative;
   z-index: 1;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; /* Fallback for older browsers */
+  height: 100dvh; /* Dynamic viewport height - accounts for mobile address bar */
   overflow: hidden;
   display: flex;
   align-items: center;
