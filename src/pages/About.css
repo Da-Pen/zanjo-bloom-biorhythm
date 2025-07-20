@@ -70,7 +70,7 @@
 @media (max-width: 768px) {
   .about {
     padding: 1rem; /* Normal padding since header scrolls */
-    padding-bottom: 120px; /* Extra space for fixed footer */
+    padding-bottom: 60px; /* Extra space for fixed footer */
   }
 
   .about h1 {
@@ -86,7 +86,7 @@
 @media (max-width: 480px) {
   .about {
     padding: 1rem; /* Normal padding since header scrolls */
-    padding-bottom: 120px; /* Extra space for fixed footer */
+    padding-bottom: 60px; /* Extra space for fixed footer */
   }
 
   .about h1 {
