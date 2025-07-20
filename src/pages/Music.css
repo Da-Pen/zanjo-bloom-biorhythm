@@ -3,68 +3,157 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  min-height: calc(100vh - 120px); /* Full height minus header/footer space */
+  min-height: calc(100dvh - 120px);
   padding: 1rem;
-  transform: translateY(-20%); /* Move content up to appear more centered */
+  box-sizing: border-box;
 }
 
 .music-content {
   max-width: 1000px;
   width: 100%;
   text-align: center;
+  padding: 0.5rem 2rem 2rem;
 }
 
 .music h1 {
   color: #ffffff;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.music-placeholder {
-  background: rgba(0, 0, 0, 0.2);
-  border: 2px dashed rgba(255, 255, 255, 0.3);
-  padding: 4rem 2rem;
-  border-radius: 10px;
-  backdrop-filter: blur(5px);
+/* Albums Grid */
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+  gap: 3rem;
+  margin-top: 2rem;
 }
 
-.music-placeholder p {
-  color: #888888;
-  font-size: 1.2rem;
-  margin: 0;
+/* Album Card */
+.album-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.album-cover {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.album-cover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+}
+
+.album-title {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 1.5rem 0 1rem 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.05em;
+}
+
+/* Listen Now Button */
+.listen-now-btn {
+  font-family: 'Big Shoulders Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.listen-now-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.listen-now-btn:active {
+  transform: translateY(0);
 }
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .music {
+    padding-bottom: 60px; /* Extra space for fixed footer/socials */
+  }
+
+  .albums-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 2.5rem;
+  }
+
   .music h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
-  .music-placeholder {
-    padding: 3rem 1.5rem;
+  .album-cover {
+    max-width: 300px;
+    width: 300px; /* Fixed width to ensure square aspect ratio */
+    height: 300px; /* Fixed height to ensure square aspect ratio */
   }
 
-  .music-placeholder p {
+  .album-title {
+    font-size: 1.2rem;
+    margin: 1rem 0 0.8rem 0;
+  }
+
+  .listen-now-btn {
     font-size: 1rem;
+    padding: 0.7rem 1.8rem;
   }
 }
 
 @media (max-width: 480px) {
+  .music {
+    padding-bottom: 60px; /* Extra space for fixed footer/socials */
+  }
+
+  .music-content {
+    padding: 0.5rem 1rem 2rem;
+  }
+
   .music h1 {
     font-size: 1.8rem;
   }
 
-  .music-placeholder {
-    padding: 2rem 1rem;
+  .album-cover {
+    max-width: 280px;
+    width: 280px; /* Fixed width to ensure square aspect ratio */
+    height: 280px; /* Fixed height to ensure square aspect ratio */
   }
 
-  .music-placeholder p {
-    font-size: 0.9rem;
+  .album-title {
+    font-size: 1.1rem;
+  }
+
+  .listen-now-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.5rem;
   }
 } 

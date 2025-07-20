@@ -52,7 +52,7 @@
 .about-text {
   color: #cccccc;
   font-family: 'Caslon Antique', serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.8;
   text-align: left;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
@@ -79,7 +79,7 @@
   }
 
   .about-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -95,7 +95,7 @@
   }
 
   .about-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .about-text p {

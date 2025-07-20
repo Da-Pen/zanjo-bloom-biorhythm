@@ -8,19 +8,16 @@ const About = () => {
         <h1>About</h1>
         <div className="about-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          With a natural inclination to understand the creative landscape, Zanjo Bloom finds intersection between sonic and visual disciplines.
           </p>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          With grounded production and resonant storytelling, the recording artist uses both songwriting and referential imagery to cultivate lived experience into a composition that is distinct while deeply sentimental.
           </p>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
-            veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          From the ground up, every idea is meticulously crafted with detail oriented criteria that erases the line between the literal and symbolic language of expression.  
+          </p>
+          <p>
+          Building entire domains around his bodies of work is simply a itch that needs to be scratched, and a style of communication that is comprehensive and rooted in reflection.
           </p>
         </div>
       </div>
