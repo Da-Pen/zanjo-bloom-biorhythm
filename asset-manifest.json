@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/zanjo-bloom-biorhythm/static/css/main.a6f7c5d2.css",
-    "main.js": "/zanjo-bloom-biorhythm/static/js/main.e538a3b3.js",
+    "main.css": "/zanjo-bloom-biorhythm/static/css/main.3c30a7ed.css",
+    "main.js": "/zanjo-bloom-biorhythm/static/js/main.b904c0be.js",
     "static/media/background.mov": "/zanjo-bloom-biorhythm/static/media/background.26c1b712f72957197078.mov",
+    "static/media/glue_rework_cover.jpg": "/zanjo-bloom-biorhythm/static/media/glue_rework_cover.3fe2a70a6e7f94761b2e.jpg",
     "static/media/biorhythm-album-cover.jpg": "/zanjo-bloom-biorhythm/static/media/biorhythm-album-cover.3f028376b872886584dc.jpg",
     "static/media/zanjo_bloom_logo.png": "/zanjo-bloom-biorhythm/static/media/zanjo_bloom_logo.104b0159e5064ac56898.png",
     "static/media/CaslonAntique-Bold.ttf": "/zanjo-bloom-biorhythm/static/media/CaslonAntique-Bold.15800ff39887644a78a0.ttf",
     "static/media/CaslonAntique.ttf": "/zanjo-bloom-biorhythm/static/media/CaslonAntique.1969c960b6fe07c983be.ttf",
     "static/media/CaslonAntique-Italic.ttf": "/zanjo-bloom-biorhythm/static/media/CaslonAntique-Italic.d0131e6706066b9e74ce.ttf",
+    "static/media/glue_cover.jpg": "/zanjo-bloom-biorhythm/static/media/glue_cover.424f97e4d5815734b6e7.jpg",
     "static/media/GlacialIndifference-Regular.otf": "/zanjo-bloom-biorhythm/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
     "static/media/GlacialIndifference-Bold.otf": "/zanjo-bloom-biorhythm/static/media/GlacialIndifference-Bold.e742f534cb2ac8b560c6.otf",
     "index.html": "/zanjo-bloom-biorhythm/index.html",
@@ -15,11 +17,11 @@
     "static/media/youtube-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/youtube-brands-solid.508fc8c5f21d08764abff235408e9863.svg",
     "static/media/facebook-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/facebook-brands-solid.1e2728d655991f488b6d434dd6b8eed6.svg",
     "static/media/tiktok-brands-solid.svg": "/zanjo-bloom-biorhythm/static/media/tiktok-brands-solid.b80eabd1b330c52304cee1ded7c203c6.svg",
-    "main.a6f7c5d2.css.map": "/zanjo-bloom-biorhythm/static/css/main.a6f7c5d2.css.map",
-    "main.e538a3b3.js.map": "/zanjo-bloom-biorhythm/static/js/main.e538a3b3.js.map"
+    "main.3c30a7ed.css.map": "/zanjo-bloom-biorhythm/static/css/main.3c30a7ed.css.map",
+    "main.b904c0be.js.map": "/zanjo-bloom-biorhythm/static/js/main.b904c0be.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6f7c5d2.css",
-    "static/js/main.e538a3b3.js"
+    "static/css/main.3c30a7ed.css",
+    "static/js/main.b904c0be.js"
   ]
 }
