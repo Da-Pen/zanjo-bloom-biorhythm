@@ -58,7 +58,7 @@ function AppContent() {
 
 function App() {
   return (
-    <Router basename="/zanjo-bloom-biorhythm">
+    <Router>
       <AppContent />
     </Router>
   );
