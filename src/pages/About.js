@@ -1,4 +1,5 @@
 import React from 'react';
+import aboutPic from '../assets/about-pic.jpg';
 import './About.css';
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
     <div className="about">
       <div className="about-content">
         {/* <h1>About</h1> */}
+        <img src={aboutPic} alt="Zanjo Bloom" className="about-image" />
         <div className="about-text">
           <p>
           With a natural inclination to understand the creative landscape, Zanjo Bloom finds intersection between sonic and visual disciplines.

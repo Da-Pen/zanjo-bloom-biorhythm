@@ -49,6 +49,19 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.about-image {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  border-radius: 0; /* Keep square to match site design */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-text {
   color: #cccccc;
   font-family: 'Caslon Antique', serif;
@@ -78,6 +91,11 @@
     margin-bottom: 1rem;
   }
 
+  .about-image {
+    max-width: 200px;
+    margin-bottom: 1.5rem;
+  }
+
   .about-text {
     font-size: 1.4rem;
   }
@@ -92,6 +110,11 @@
   .about h1 {
     font-size: 1.8rem;
     margin-bottom: 0.8rem;
+  }
+
+  .about-image {
+    max-width: 170px;
+    margin-bottom: 1rem;
   }
 
   .about-text {
