@@ -1,7 +1,3 @@
 # TODO
-- create google form for email newsletter
-- fix logo
-- get an actual domain name
-- populate music page
-- fix link from home page - not to spotify but to all streaming links
+- Ideally get pre-save link to go directly to pre-save instead of distrokid
 - change "Biorhythm reading" title

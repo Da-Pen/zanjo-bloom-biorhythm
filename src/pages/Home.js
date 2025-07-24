@@ -4,12 +4,12 @@ import albumCover from '../assets/biorhythm-album-cover.jpg';
 import './Home.css';
 
 const Home = () => {
-  const handleListenNow = () => {
-    window.open('https://open.spotify.com/artist/76LFL6UF6O9oFE9CC8rbEB', '_blank');
+  const handlePreSave = () => {
+    window.open('https://distrokid.com/hyperfollow/zanjobloom/biorhythm', '_blank');
   };
 
   const handleAlbumClick = () => {
-    window.open('https://open.spotify.com/artist/76LFL6UF6O9oFE9CC8rbEB', '_blank');
+    window.open('https://distrokid.com/hyperfollow/zanjobloom/biorhythm', '_blank');
   };
 
   return (
@@ -22,9 +22,9 @@ const Home = () => {
         />
         <button 
           className="listen-now-btn"
-          onClick={handleListenNow}
+          onClick={handlePreSave}
         >
-          Listen Now
+          Pre-Save
         </button>
         
         <EmailSignup />
