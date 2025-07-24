@@ -94,6 +94,7 @@
   .about-image {
     max-width: 200px;
     margin-bottom: 1.5rem;
+    margin-top: 0;
   }
 
   .about-text {
@@ -115,6 +116,7 @@
   .about-image {
     max-width: 170px;
     margin-bottom: 1rem;
+    margin-top: 0;
   }
 
   .about-text {
