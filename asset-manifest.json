@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fd00725f.css",
-    "main.js": "/static/js/main.df8a8beb.js",
+    "main.js": "/static/js/main.3679b396.js",
     "static/media/background.mov": "/static/media/background.26c1b712f72957197078.mov",
     "static/media/glue_rework_cover.jpg": "/static/media/glue_rework_cover.3fe2a70a6e7f94761b2e.jpg",
     "static/media/about-pic.jpg": "/static/media/about-pic.4456972beb66e4edd02a.jpg",
@@ -13,16 +13,17 @@
     "static/media/glue_cover.jpg": "/static/media/glue_cover.424f97e4d5815734b6e7.jpg",
     "static/media/GlacialIndifference-Regular.otf": "/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
     "static/media/GlacialIndifference-Bold.otf": "/static/media/GlacialIndifference-Bold.e742f534cb2ac8b560c6.otf",
-    "static/media/instagram-brands-solid.svg": "/static/media/instagram-brands-solid.f8fd335b15e61566bb2fd0de723e5249.svg",
+    "static/media/instagram.svg": "/static/media/instagram.f8fd335b15e61566bb2fd0de723e5249.svg",
     "index.html": "/index.html",
-    "static/media/youtube-brands-solid.svg": "/static/media/youtube-brands-solid.508fc8c5f21d08764abff235408e9863.svg",
-    "static/media/facebook-brands-solid.svg": "/static/media/facebook-brands-solid.1e2728d655991f488b6d434dd6b8eed6.svg",
-    "static/media/tiktok-brands-solid.svg": "/static/media/tiktok-brands-solid.b80eabd1b330c52304cee1ded7c203c6.svg",
+    "static/media/youtube.svg": "/static/media/youtube.508fc8c5f21d08764abff235408e9863.svg",
+    "static/media/facebook.svg": "/static/media/facebook.1e2728d655991f488b6d434dd6b8eed6.svg",
+    "static/media/email.svg": "/static/media/email.c8265c9bed3cbf5d12cb12d5f55b8983.svg",
+    "static/media/tiktok.svg": "/static/media/tiktok.b80eabd1b330c52304cee1ded7c203c6.svg",
     "main.fd00725f.css.map": "/static/css/main.fd00725f.css.map",
-    "main.df8a8beb.js.map": "/static/js/main.df8a8beb.js.map"
+    "main.3679b396.js.map": "/static/js/main.3679b396.js.map"
   },
   "entrypoints": [
     "static/css/main.fd00725f.css",
-    "static/js/main.df8a8beb.js"
+    "static/js/main.3679b396.js"
   ]
 }
