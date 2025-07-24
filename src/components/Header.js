@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import zanjoBloomLogo from '../assets/zanjo_bloom_logo.png';
-import instagramIcon from '../assets/instagram-brands-solid.svg';
-import facebookIcon from '../assets/facebook-brands-solid.svg';
-import tiktokIcon from '../assets/tiktok-brands-solid.svg';
-import youtubeIcon from '../assets/youtube-brands-solid.svg';
+import instagramIcon from '../assets/instagram.svg';
+import facebookIcon from '../assets/facebook.svg';
+import tiktokIcon from '../assets/tiktok.svg';
+import youtubeIcon from '../assets/youtube.svg';
+import emailIcon from '../assets/email.svg';
 import './Header.css';
 
 const Header = () => {
@@ -37,6 +38,11 @@ const Header = () => {
       name: 'youtube', 
       icon: youtubeIcon,
       url: 'https://www.youtube.com/@zanjobloom'
+    },
+    { 
+      name: 'email', 
+      icon: emailIcon,
+      url: 'mailto:leonnatgaib@gmail.com'
     }
   ];
 
