@@ -86,8 +86,9 @@
   .header-content {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 0.5rem;
+    gap: 0rem;
     padding: 1rem;
+    padding-top: 1.5rem;
   }
 
   /* Mobile: Logo first */
