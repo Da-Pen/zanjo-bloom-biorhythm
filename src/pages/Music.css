@@ -99,12 +99,13 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .music {
-    padding-bottom: 60px; /* Extra space for fixed footer/socials */
+    padding: 1rem 0.5rem 60px; /* Reduced horizontal padding for better centering */
   }
 
   .albums-grid {
     grid-template-columns: 1fr; /* 1 column on mobile */
     gap: 2.5rem;
+    justify-items: center; /* Ensure grid items are centered */
   }
 
   .music h1 {
@@ -113,9 +114,9 @@
   }
 
   .album-cover {
-    max-width: 300px;
-    width: 300px; /* Fixed width to ensure square aspect ratio */
-    height: 300px; /* Fixed height to ensure square aspect ratio */
+    max-width: min(300px, calc(100vw - 4rem)); /* Responsive width with minimum margins */
+    width: min(300px, calc(100vw - 4rem));
+    height: min(300px, calc(100vw - 4rem)); /* Maintain square aspect ratio */
   }
 
   .album-title {
@@ -131,11 +132,12 @@
 
 @media (max-width: 480px) {
   .music {
-    padding-bottom: 60px; /* Extra space for fixed footer/socials */
+    padding: 0rem 0.25rem 60px; /* Minimal horizontal padding for very small devices */
   }
 
   .music-content {
-    padding: 0.5rem 1rem 2rem;
+    padding: 0rem 0.5rem 2rem; /* Reduced horizontal padding */
+    max-width: 100%; /* Ensure full width usage */
   }
 
   .music h1 {
@@ -143,9 +145,9 @@
   }
 
   .album-cover {
-    max-width: 280px;
-    width: 280px; /* Fixed width to ensure square aspect ratio */
-    height: 280px; /* Fixed height to ensure square aspect ratio */
+    max-width: min(280px, calc(100vw - 2rem)); /* Even more responsive for small devices */
+    width: min(280px, calc(100vw - 2rem));
+    height: min(280px, calc(100vw - 2rem)); /* Maintain square aspect ratio */
   }
 
   .album-title {
@@ -155,5 +157,34 @@
   .listen-now-btn {
     font-size: 0.95rem;
     padding: 0.6rem 1.5rem;
+    max-width: calc(100vw - 2rem); /* Prevent button overflow */
+    word-wrap: break-word;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .music {
+    padding: 0.5rem 0.125rem 60px; /* Minimal padding for very small screens */
+  }
+
+  .music-content {
+    padding: 0.25rem 0.25rem 2rem;
+  }
+
+  .album-cover {
+    max-width: min(250px, calc(100vw - 1rem)); /* Further reduced for tiny screens */
+    width: min(250px, calc(100vw - 1rem));
+    height: min(250px, calc(100vw - 1rem));
+  }
+
+  .album-title {
+    font-size: 1rem;
+    margin: 0.8rem 0 0.6rem 0;
+  }
+
+  .listen-now-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
   }
 } 

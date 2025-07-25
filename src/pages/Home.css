@@ -65,8 +65,8 @@
   }
 
   .album-cover {
-    width: 220px;
-    height: 220px;
+    width: 190px;
+    height: 190px;
   }
 
   .listen-now-btn {
@@ -82,8 +82,8 @@
 @media (max-width: 480px) {
 
   .album-cover {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
   }
 
   .listen-now-btn {
