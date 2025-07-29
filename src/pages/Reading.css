@@ -117,9 +117,9 @@
 }
 
 .calculate-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.3);
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 500;
@@ -130,6 +130,8 @@
   height: fit-content;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  backdrop-filter: blur(10px);
 }
 
 .calculate-btn:hover {
