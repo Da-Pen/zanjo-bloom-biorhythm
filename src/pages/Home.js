@@ -8,6 +8,10 @@ const Home = () => {
     window.open('https://distrokid.com/hyperfollow/zanjobloom/biorhythm', '_blank');
   };
 
+  const handlePreOrder = () => {
+    window.open('https://elasticstage.com/zanjobloom/releases/biorhythm-album', '_blank');
+  };
+
   const handleAlbumClick = () => {
     window.open('https://distrokid.com/hyperfollow/zanjobloom/biorhythm', '_blank');
   };
@@ -20,12 +24,20 @@ const Home = () => {
           style={{ backgroundImage: `url(${albumCover})` }}
           onClick={handleAlbumClick}
         />
-        <button 
-          className="listen-now-btn"
-          onClick={handlePreSave}
-        >
-          Pre-Save
-        </button>
+        <div className="button-group">
+          <button 
+            className="listen-now-btn"
+            onClick={handlePreSave}
+          >
+            Pre-Save
+          </button>
+          <button 
+            className="listen-now-btn"
+            onClick={handlePreOrder}
+          >
+            Pre-Order
+          </button>
+        </div>
         
         <EmailSignup />
       </div>

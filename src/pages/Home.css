@@ -19,6 +19,14 @@
   padding: 1.2rem; /* Reduced padding for less height */
 }
 
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .album-cover {
   width: 300px;
   height: 300px;
@@ -75,6 +83,10 @@
     padding: 0.8rem 1.5rem;
   }
 
+  .button-group {
+    gap: 0.8rem;
+  }
+
   .home-content {
     gap: 1.2rem;
   }
@@ -90,6 +102,11 @@
   .listen-now-btn {
     font-size: 0.95rem !important;
     padding: 0.7rem 1.2rem;
+    min-width: 120px;
+  }
+
+  .button-group {
+    gap: 0.6rem;
   }
 
   .home-content {
