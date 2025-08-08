@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Line } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -11,6 +11,7 @@ import {
   Filler,
 } from 'chart.js';
 import { differenceInDays, format, addDays, parseISO } from 'date-fns';
+import { useSearchParams } from 'react-router-dom';
 import './Reading.css';
 
 // Register Chart.js components
@@ -29,12 +30,14 @@ const Reading = () => {
   const [targetDate, setTargetDate] = useState(format(new Date(), 'yyyy-MM-dd'));
   const [chartData, setChartData] = useState(null);
   const [currentScores, setCurrentScores] = useState(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [showToast, setShowToast] = useState(false);
 
-  const calculateBiorhythm = () => {
-    if (!birthDate) return;
+  const performCalculation = (birthDateStr, targetDateStr) => {
+    if (!birthDateStr) return;
 
-    const birth = parseISO(birthDate);
-    const target = parseISO(targetDate);
+    const birth = parseISO(birthDateStr);
+    const target = parseISO(targetDateStr);
     const daysSinceBirth = differenceInDays(target, birth);
     
     // Calculate current day biorhythm scores
@@ -110,6 +113,98 @@ const Reading = () => {
       ],
     });
   };
+
+  const calculateBiorhythm = () => {
+    if (!birthDate) return;
+    performCalculation(birthDate, targetDate);
+  };
+
+  const handleShare = async () => {
+    const url = new URL(window.location.href);
+    url.searchParams.set('birth', birthDate);
+    url.searchParams.set('target', targetDate);
+    const shareUrl = url.toString();
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'My Biorhythm Chart',
+          text: 'Check out my biorhythm chart!',
+          url: shareUrl,
+        });
+        return; // Successfully shared
+      } catch (err) {
+        // Fall through to clipboard methods
+      }
+    }
+
+    // Try modern clipboard API first
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        showCopyToast();
+        return;
+      } catch (err) {
+        // Fall through to legacy method
+      }
+    }
+
+    // Legacy fallback method
+    try {
+      const textArea = document.createElement('textarea');
+      textArea.value = shareUrl;
+      textArea.style.position = 'fixed';
+      textArea.style.left = '-999999px';
+      textArea.style.top = '-999999px';
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      showCopyToast();
+    } catch (err) {
+      // Final fallback - show the URL in a prompt
+      prompt('Copy this link to share your biorhythm chart:', shareUrl);
+    }
+  };
+
+  const showCopyToast = () => {
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
+  };
+
+  useEffect(() => {
+    // Initialize from URL params
+    const birthParam = searchParams.get('birth');
+    const targetParam = searchParams.get('target');
+    const isValidDate = (s) => /^(\d{4})-(\d{2})-(\d{2})$/.test(s);
+
+    let initialBirth = birthDate;
+    let initialTarget = targetDate;
+
+    if (birthParam && isValidDate(birthParam)) {
+      initialBirth = birthParam;
+      setBirthDate(birthParam);
+    }
+    if (targetParam && isValidDate(targetParam)) {
+      initialTarget = targetParam;
+      setTargetDate(targetParam);
+    }
+
+    // Auto-calc when both present
+    if (initialBirth && isValidDate(initialBirth)) {
+      performCalculation(initialBirth, initialTarget);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    // Keep URL in sync with current selections
+    const params = {};
+    if (birthDate) params.birth = birthDate;
+    if (targetDate) params.target = targetDate;
+    setSearchParams(params, { replace: true });
+  }, [birthDate, targetDate, setSearchParams]);
 
   const chartOptions = {
     responsive: true,
@@ -255,6 +350,10 @@ const Reading = () => {
             <div className="chart-container">
               <Line data={chartData} options={chartOptions} />
             </div>
+            
+            <button onClick={handleShare} className="calculate-btn share-btn">
+              Share
+            </button>
           </div>
         )}
         
@@ -307,6 +406,15 @@ const Reading = () => {
         )}
         
       </div>
+      
+      {/* Toast notification */}
+      {showToast && (
+        <div className="toast-notification">
+          <div className="toast-content">
+            Link copied to clipboard
+          </div>
+        </div>
+      )}
     </div>
   );
 };
