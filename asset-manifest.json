@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.96811676.css",
-    "main.js": "/static/js/main.f19a898f.js",
+    "main.js": "/static/js/main.29ef6df6.js",
     "static/media/background.mov": "/static/media/background.26c1b712f72957197078.mov",
     "static/media/glue_rework_cover.jpg": "/static/media/glue_rework_cover.3fe2a70a6e7f94761b2e.jpg",
     "static/media/about-pic.jpg": "/static/media/about-pic.4456972beb66e4edd02a.jpg",
@@ -20,10 +20,10 @@
     "static/media/email.svg": "/static/media/email.c8265c9bed3cbf5d12cb12d5f55b8983.svg",
     "static/media/tiktok.svg": "/static/media/tiktok.b80eabd1b330c52304cee1ded7c203c6.svg",
     "main.96811676.css.map": "/static/css/main.96811676.css.map",
-    "main.f19a898f.js.map": "/static/js/main.f19a898f.js.map"
+    "main.29ef6df6.js.map": "/static/js/main.29ef6df6.js.map"
   },
   "entrypoints": [
     "static/css/main.96811676.css",
-    "static/js/main.f19a898f.js"
+    "static/js/main.29ef6df6.js"
   ]
 }
