@@ -129,7 +129,7 @@ const Reading = () => {
       try {
         await navigator.share({
           title: 'My Biorhythm Chart',
-          text: 'Check out my biorhythm chart!',
+          text: 'Check out my biorhythm chart - what does yours look like?',
           url: shareUrl,
         });
         return; // Successfully shared
