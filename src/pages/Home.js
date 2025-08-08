@@ -4,16 +4,16 @@ import albumCover from '../assets/biorhythm-album-cover.jpg';
 import './Home.css';
 
 const Home = () => {
-  const handlePreSave = () => {
-    window.open('https://distrokid.com/hyperfollow/zanjobloom/biorhythm', '_blank');
+  const handleListenNow = () => {
+    window.open('https://www.notnoise.co/link/zanjo-bloom-biorhythm', '_blank');
   };
 
-  const handlePreOrder = () => {
+  const handlePurchase = () => {
     window.open('https://elasticstage.com/zanjobloom/releases/biorhythm-album', '_blank');
   };
 
   const handleAlbumClick = () => {
-    window.open('https://distrokid.com/hyperfollow/zanjobloom/biorhythm', '_blank');
+    window.open('https://www.notnoise.co/link/zanjo-bloom-biorhythm', '_blank');
   };
 
   return (
@@ -27,15 +27,15 @@ const Home = () => {
         <div className="button-group">
           <button 
             className="listen-now-btn"
-            onClick={handlePreSave}
+            onClick={handleListenNow}
           >
-            Pre-Save
+            Listen
           </button>
           <button 
             className="listen-now-btn"
-            onClick={handlePreOrder}
+            onClick={handlePurchase}
           >
-            Pre-Order
+            Purchase
           </button>
         </div>
         
