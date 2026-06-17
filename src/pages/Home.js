@@ -1,19 +1,19 @@
 import React from 'react';
 import EmailSignup from '../components/EmailSignup';
-import albumCover from '../assets/biorhythm-album-cover.jpg';
+import albumCover from '../assets/5pj/album-cover.png';
 import './Home.css';
 
 const Home = () => {
   const handleListenNow = () => {
-    window.open('https://www.notnoise.co/link/zanjo-bloom-biorhythm', '_blank');
+    window.open('https://notnoise.co/link/zanjo-bloom-five-petal-jasmine', '_blank');
   };
 
   const handlePurchase = () => {
-    window.open('https://elasticstage.com/zanjobloom/releases/biorhythm-album', '_blank');
+    window.open('https://elasticstage.com/zanjobloom/releases/five-petal-jasmine-album', '_blank');
   };
 
   const handleAlbumClick = () => {
-    window.open('https://www.notnoise.co/link/zanjo-bloom-biorhythm', '_blank');
+    window.open('https://notnoise.co/link/zanjo-bloom-five-petal-jasmine', '_blank');
   };
 
   return (
@@ -29,7 +29,7 @@ const Home = () => {
             className="listen-now-btn"
             onClick={handleListenNow}
           >
-            Listen
+            Pre-Save
           </button>
           <button 
             className="listen-now-btn"

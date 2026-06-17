@@ -54,7 +54,7 @@ const Footer = ({ isFixed = false }) => {
         </div>
         
         <div className="copyright">
-          © 2025 LVNDR Records. All rights reserved.
+          © 2026 LVNDR Records. All rights reserved.
         </div>
       </div>
     </footer>

@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutPic from '../assets/about-pic.jpg';
+import aboutPic from '../assets/5pj/about-pic.jpeg';
 import './About.css';
 
 const About = () => {
@@ -10,16 +10,13 @@ const About = () => {
         <img src={aboutPic} alt="Zanjo Bloom" className="about-image" />
         <div className="about-text">
           <p>
-          With a natural inclination to understand the creative landscape, Zanjo Bloom finds intersection between sonic and visual disciplines.
+          Surrounded by a plethora of musical influences, Zanjo Bloom seeks to seamlessly blend them all into a distinct palette.
           </p>
           <p>
-          With grounded production and resonant storytelling, the recording artist uses both songwriting and referential imagery to cultivate lived experience into a composition that is distinct while deeply sentimental.
+          Drawing reference from soul, island rock, folk, and electronic genres, experimentation is just a means to an end toward pure, unadulterated expression.
           </p>
           <p>
-          From the ground up, every idea is meticulously crafted with detail oriented criteria that erases the line between the literal and symbolic language of expression.  
-          </p>
-          <p>
-          Building entire domains around his bodies of work is simply a itch that needs to be scratched, and a style of communication that is comprehensive and rooted in reflection.
+          With radio placements on CIUT 89.5 FM as well as a growing online presence, the message gets louder, and the vision becomes clearer.
           </p>
         </div>
       </div>

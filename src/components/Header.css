@@ -42,18 +42,35 @@
 /* Logo */
 .logo-link {
   justify-self: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .logo {
   height: 40px;
   width: auto;
-  transition: opacity 0.3s ease;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
-  padding-top: 8px;
+  flex-shrink: 0;
 }
 
-.logo:hover {
-  opacity: 0.8;
+.logo-text {
+  font-family: 'Majesty', serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  line-height: 1;
 }
 
 /* Navigation */
@@ -110,7 +127,11 @@
   }
 
   .logo {
-    height: 35px;
+    height: 32px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
   }
 
   .nav-link {
@@ -128,6 +149,14 @@
   }
 
   .logo {
-    height: 30px;
+    height: 28px;
+  }
+
+  .logo-text {
+    font-size: 1.05rem;
+  }
+
+  .logo-brand {
+    gap: 0.45rem;
   }
 } 

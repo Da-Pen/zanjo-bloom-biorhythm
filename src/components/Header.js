@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import zanjoBloomLogo from '../assets/zanjo_bloom_logo.png';
+import zanjoBloomLogo from '../assets/5pj/logo.png';
 import instagramIcon from '../assets/instagram.svg';
 import facebookIcon from '../assets/facebook.svg';
 import tiktokIcon from '../assets/tiktok.svg';
@@ -15,7 +15,7 @@ const Header = () => {
     { path: '/about', label: 'About' },
     { path: '/music', label: 'Music' },
     { path: '/visual', label: 'Visual' },
-    { path: '/reading', label: 'Reading' }
+    // { path: '/reading', label: 'Reading' }
   ];
 
   const socialLinks = [
@@ -66,7 +66,10 @@ const Header = () => {
 
         {/* Logo - Center */}
         <Link to="/" className="logo-link">
-          <img src={zanjoBloomLogo} alt="Zanjo Bloom" className="logo" />
+          <div className="logo-brand">
+            <img src={zanjoBloomLogo} alt="Zanjo Bloom" className="logo" />
+            <span className="logo-text">ZANJO BLOOM</span>
+          </div>
         </Link>
 
         {/* Navigation - Desktop: Top Right, Mobile: Below Logo */}

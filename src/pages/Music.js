@@ -1,22 +1,36 @@
 import React from 'react';
 import './Music.css';
-import glueReworkCover from '../assets/glue_rework_cover.jpg';
-import glueCover from '../assets/glue_cover.jpg';
+import glueReworkCover from '../assets/biorhythm/glue_rework_cover.jpg';
+// import glueCover from '../assets/biorhythm/glue_cover.jpg';
+import biorhythmCover from '../assets/biorhythm/biorhythm-album-cover.jpg'
+import fivePetalJasmine from '../assets/5pj/album-cover.png'
 
 const Music = () => {
   const albums = [
     {
       id: 1,
+      cover: fivePetalJasmine,
+      title: 'FIVE PETAL JASMINE',
+      url: 'https://notnoise.co/link/zanjo-bloom-five-petal-jasmine'
+    },
+    {
+      id: 2,
+      cover: biorhythmCover,
+      title: 'BIORHYTHM',
+      url: 'https://notnoise.co/link/zanjo-bloom-biorhythm'
+    },
+    {
+      id: 3,
       cover: glueReworkCover,
       title: 'GLUE - 20XX Rework',
       url: 'https://www.notnoise.co/link/zanjo-bloom-glue---20xx-rework'
     },
-    {
-      id: 2,
-      cover: glueCover,
-      title: 'GLUE',
-      url: 'https://www.notnoise.co/link/zanjo-bloom-glue'
-    }
+    // {
+    //   id: 3,
+    //   cover: glueCover,
+    //   title: 'GLUE',
+    //   url: 'https://www.notnoise.co/link/zanjo-bloom-glue'
+    // }
   ];
 
   return (

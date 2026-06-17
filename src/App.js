@@ -7,7 +7,7 @@ import About from './pages/About';
 import Visual from './pages/Visual';
 import Reading from './pages/Reading';
 import Music from './pages/Music';
-import backgroundVideo from './assets/background.mov';
+import backgroundVideo from './assets/5pj/background.mov';
 import './App.css';
 
 function AppContent() {
