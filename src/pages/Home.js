@@ -29,7 +29,7 @@ const Home = () => {
             className="listen-now-btn"
             onClick={handleListenNow}
           >
-            Pre-Save
+            Listen
           </button>
           <button 
             className="listen-now-btn"
