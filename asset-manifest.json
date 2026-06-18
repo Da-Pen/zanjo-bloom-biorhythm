@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.a459605f.css",
-    "main.js": "/static/js/main.5c7aab94.js",
-    "static/media/background.mov": "/static/media/background.26c1b712f72957197078.mov",
+    "main.css": "/static/css/main.afc71b21.css",
+    "main.js": "/static/js/main.02ff925d.js",
+    "static/media/background.mov": "/static/media/background.3df452e4f243a504e75c.mov",
+    "static/media/album-cover.png": "/static/media/album-cover.9d0304b17a45c35df388.png",
     "static/media/glue_rework_cover.jpg": "/static/media/glue_rework_cover.3fe2a70a6e7f94761b2e.jpg",
-    "static/media/about-pic.jpg": "/static/media/about-pic.4456972beb66e4edd02a.jpg",
     "static/media/biorhythm-album-cover.jpg": "/static/media/biorhythm-album-cover.3f028376b872886584dc.jpg",
-    "static/media/zanjo_bloom_logo.png": "/static/media/zanjo_bloom_logo.330c3f78a61535bf9627.png",
+    "static/media/about-pic.jpeg": "/static/media/about-pic.0d0e7b52f2cfdf63ce87.jpeg",
     "static/media/CaslonAntique-Bold.ttf": "/static/media/CaslonAntique-Bold.15800ff39887644a78a0.ttf",
     "static/media/CaslonAntique.ttf": "/static/media/CaslonAntique.1969c960b6fe07c983be.ttf",
     "static/media/CaslonAntique-Italic.ttf": "/static/media/CaslonAntique-Italic.d0131e6706066b9e74ce.ttf",
-    "static/media/glue_cover.jpg": "/static/media/glue_cover.424f97e4d5815734b6e7.jpg",
     "static/media/GlacialIndifference-Regular.otf": "/static/media/GlacialIndifference-Regular.884dc679b35db5f785f2.otf",
+    "static/media/majesty-regular.ttf": "/static/media/majesty-regular.443851528e2c41bef1fe.ttf",
+    "static/media/logo.png": "/static/media/logo.36333b2a1495a74e7809.png",
     "static/media/GlacialIndifference-Bold.otf": "/static/media/GlacialIndifference-Bold.e742f534cb2ac8b560c6.otf",
+    "static/media/majesty-regular.otf": "/static/media/majesty-regular.2428698df29dd76e137b.otf",
     "static/media/instagram.svg": "/static/media/instagram.f8fd335b15e61566bb2fd0de723e5249.svg",
     "index.html": "/index.html",
     "static/media/youtube.svg": "/static/media/youtube.508fc8c5f21d08764abff235408e9863.svg",
     "static/media/facebook.svg": "/static/media/facebook.1e2728d655991f488b6d434dd6b8eed6.svg",
     "static/media/email.svg": "/static/media/email.c8265c9bed3cbf5d12cb12d5f55b8983.svg",
     "static/media/tiktok.svg": "/static/media/tiktok.b80eabd1b330c52304cee1ded7c203c6.svg",
-    "main.a459605f.css.map": "/static/css/main.a459605f.css.map",
-    "main.5c7aab94.js.map": "/static/js/main.5c7aab94.js.map"
+    "main.afc71b21.css.map": "/static/css/main.afc71b21.css.map",
+    "main.02ff925d.js.map": "/static/js/main.02ff925d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a459605f.css",
-    "static/js/main.5c7aab94.js"
+    "static/css/main.afc71b21.css",
+    "static/js/main.02ff925d.js"
   ]
 }
