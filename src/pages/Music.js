@@ -7,20 +7,20 @@ import fivePetalJasmine from '../assets/5pj/album-cover.png'
 
 const Music = () => {
   const albums = [
+    // {
+    //   id: 1,
+    //   cover: fivePetalJasmine,
+    //   title: 'FIVE PETAL JASMINE',
+    //   url: 'https://distrokid.com/hyperfollow/zanjobloom/five-petal-jasmine'
+    // },
     {
       id: 1,
-      cover: fivePetalJasmine,
-      title: 'FIVE PETAL JASMINE',
-      url: 'https://distrokid.com/hyperfollow/zanjobloom/five-petal-jasmine'
-    },
-    {
-      id: 2,
       cover: biorhythmCover,
       title: 'BIORHYTHM',
       url: 'https://notnoise.co/link/zanjo-bloom-biorhythm'
     },
     {
-      id: 3,
+      id: 2,
       cover: glueReworkCover,
       title: 'GLUE - 20XX Rework',
       url: 'https://www.notnoise.co/link/zanjo-bloom-glue---20xx-rework'
