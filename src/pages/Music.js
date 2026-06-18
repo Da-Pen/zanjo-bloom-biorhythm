@@ -11,7 +11,7 @@ const Music = () => {
       id: 1,
       cover: fivePetalJasmine,
       title: 'FIVE PETAL JASMINE',
-      url: 'https://notnoise.co/link/zanjo-bloom-five-petal-jasmine'
+      url: 'https://distrokid.com/hyperfollow/zanjobloom/five-petal-jasmine'
     },
     {
       id: 2,

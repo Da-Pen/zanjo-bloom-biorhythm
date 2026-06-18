@@ -5,7 +5,7 @@ import './Home.css';
 
 const Home = () => {
   const handleListenNow = () => {
-    window.open('https://notnoise.co/link/zanjo-bloom-five-petal-jasmine', '_blank');
+    window.open('https://distrokid.com/hyperfollow/zanjobloom/five-petal-jasmine', '_blank');
   };
 
   const handlePurchase = () => {
@@ -13,7 +13,7 @@ const Home = () => {
   };
 
   const handleAlbumClick = () => {
-    window.open('https://notnoise.co/link/zanjo-bloom-five-petal-jasmine', '_blank');
+    window.open('https://distrokid.com/hyperfollow/zanjobloom/five-petal-jasmine', '_blank');
   };
 
   return (
