@@ -8,8 +8,19 @@ const Visual = () => {
         {/* <h1>Visual</h1> */}
         <div className="video-container">
           <iframe
+            src="https://www.youtube.com/embed/rctyw9YuP0A"
+            title="ms. maybe"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="youtube-video"
+          ></iframe>
+        </div>
+
+        <div className="video-container">
+          <iframe
             src="https://www.youtube.com/embed/vgiZAAkHTuE"
-            title="Zanjo Bloom Music Video"
+            title="BIORHYTHM (Official Screenplay)"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -20,7 +31,7 @@ const Visual = () => {
         <div className="video-container">
           <iframe
             src="https://www.youtube.com/embed/9k_ZV4AFm_E"
-            title="Zanjo Bloom Music Video"
+            title="GLUE (Official Music Video)"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
